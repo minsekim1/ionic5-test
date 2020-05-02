@@ -1,0 +1,84 @@
+<!-- 네이티브 앱 키	4d3cee462fd42dee374917de1f7d139d
+REST API 키	d676ce415478423bdddf516c6557bda1
+JavaScript 키	e5e1a3103811f294d1e6b54471fe7a8f
+Admin 키	9375bbaab0ce361a7ca2b9c191ec087e -->
+<style>
+  ion-grid {
+    width: 100%;
+    height: 100%;
+    background: #dfdfdf;
+  }
+
+  ion-row {
+    height: 100%;
+  }
+
+  ion-col {
+    border: 1px solid #488aff;
+    background: white;
+  }
+
+  ion-button {
+    font-weight: 300;
+  }
+
+  @media (min-width: 240px) and (max-width: 768px) {
+    ion-grid {
+      background: white;
+    }
+
+    ion-col {
+      border: none;
+    }
+  }
+</style>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form name="kakaoParam">
+    <input type="hidden" name="id" /> <input type="hidden" name="email" /> <input type="hidden" name="nickname" />
+    <input type="hidden" name="access_token" />
+  </form>
+
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h4>Login Form</h4>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-input type="text" placeholder="Username"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+        </div>
+
+        <div padding>
+          <ion-button size="large" href="/touchid" expand="block">Login</ion-button>
+        </div>
+        <div padding>
+          <div class="selector">
+            <a id="kakao-login-btn"> </a>
+          </div>
+          <a href="http://developers.kakao.com/logout"></a>
+          <a style="text-decoration: none;" id="custom-login-btn" href="javascript:loginWithKakao()">
+            <ion-button size="large" expand="block">카카오로 로그인</ion-button>
+          </a>
+        </div>
+        <a href="">
+          <ion-button size="large" href="#" expand="block">네이버로 로그인</ion-button>
+        </a>
+        <ion-button size="large" href="/touchid" expand="block">페이스북으로 로그인</ion-button>
+        <ion-button size="large" href="/touchid" expand="block">구글 로그인</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

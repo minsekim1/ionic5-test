@@ -1,0 +1,75 @@
+<style>
+  img{
+    max-width: fit-content;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:-5px;
+    left: -5px;
+  }
+ion-searchbar{
+  margin-top:10px;
+}
+.enterBtn{
+  --ripple-color: transparent
+}
+.enterBtn:hover{
+  --background-focused-opacity: 0;
+    --background-hover-opacity: 0;
+}
+</style>
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start" routerDirection="back" > </ion-back-button>
+    <ion-title>전체 채팅방</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-list-header>
+  <ion-toolbar>
+    <ion-searchbar animated></ion-searchbar>
+  </ion-toolbar>
+</ion-list-header>
+
+<ion-content [fullscreen]="true">
+  <!-- List of Text Items -->
+  <ion-item routerLink="../../tab1">
+    <ion-avatar slot="start">
+    <img width="500px" src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+  </ion-avatar>
+  <ion-label>
+    <h2>스앵</h2>
+    <p>Button on right</p>
+    <p>클릭해줘!</p>
+  </ion-label>
+  <ion-button class="enterBtn" fill="outline" slot="end">입장 가능</ion-button>
+</ion-item>
+  <!-- List of Text Items -->
+
+<!-- ///////////////////////// Dump-->
+   <!-- List of Text Items -->
+   <ion-item routerLink="../../tab1">
+    <ion-avatar slot="start">
+    <img width="500px" src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+  </ion-avatar>
+  <ion-label>
+    <h2>스앵</h2>
+    <p>Button on right</p>
+    <p>클릭해줘!</p>
+  </ion-label>
+  <ion-button class="enterBtn" fill="outline" slot="end">입장 가능</ion-button>
+</ion-item>  <ion-item routerLink="../../tab1">
+  <ion-avatar slot="start">
+  <img width="500px" src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+</ion-avatar>
+<ion-label>
+  <h2>스앵</h2>
+  <p>Button on right</p>
+  <p>클릭해줘!</p>
+</ion-label>
+<ion-button class="enterBtn" fill="outline" slot="end">입장 가능</ion-button>
+</ion-item>
+  <!-- List of Text Items -->
+
+
+</ion-content>

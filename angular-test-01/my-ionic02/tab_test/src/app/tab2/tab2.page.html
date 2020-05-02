@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      알림 및 메세지
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-item color="warning"> 
+      <!--"primary", "secondary", "tertiary", "success", "warning", "danger", 
+        "light", "medium","dark"-->
+      <ion-label>
+        읽지 않은 메세지가 있습니다.
+      </ion-label>
+    </ion-item>
+  
+    <!-- List of Text Items -->
+    <ion-list>
+      <ion-list-header>
+        <ion-label>
+          최근 메세지 및 알림
+        </ion-label>
+      </ion-list-header>
+
+      <ion-item routerLink="../../tab1" >
+        <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+      </ion-avatar>
+        <ion-label>
+          <h3>Card Link Item 2</h3>
+        <p>dolor sit amet</p>
+        <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+      </ion-label>
+      </ion-item>
+
+
+  <ion-list-header>
+    <ion-label>
+      이벤트
+    </ion-label>
+  </ion-list-header>
+
+  <ion-item routerLink="../../tab1" >
+    <ion-avatar slot="start">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+  </ion-avatar>
+    <ion-label>
+      <h3>Card Link Item 2</h3>
+    <p>dolor sit amet</p>
+    <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+  </ion-label>
+  </ion-item>
+
+  
+  <ion-list-header>
+    <ion-label>
+      공지사항
+    </ion-label>
+  </ion-list-header>
+
+<ion-item routerLink="../../tab1" >
+<ion-avatar slot="start">
+<img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+</ion-avatar>
+<ion-label>
+  <h3>Card Link Item 2</h3>
+<p>dolor sit amet</p>
+<p>consectetur adipiscing elit. Duis ut urna neque.</p>
+</ion-label>
+</ion-item>
+
+</ion-list>
+
+</ion-content>

@@ -1,0 +1,147 @@
+<style>
+
+  .background1{
+    position: absolute;
+    top:0 ; left: 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(13,54,100);
+  }
+  .background2{
+    position:absolute;
+    top:0 ; left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #EAEAEA;
+  }
+  .ad{
+    position:absolute;
+    top: 30vh;
+    left: 50%; 
+    transform: translate(-50%, -80%) scale(1.5,1.5); 
+  }
+  #logo{
+    position:absolute;
+    top: 8vh;
+    left: 50%; 
+    transform: translateX( -50%);
+  }
+  #union{
+    position:absolute;
+    top: 13vh;
+    font-size: 12px;
+    left: 50%; 
+    transform: translateX( -50%);
+    color:white;
+    border-radius: 15px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 15px;
+    background-color: rgba(255, 255, 255, 0.13);
+  }
+  #btn{
+    position:absolute;
+    top: 36vh;
+    width: 80vw;
+    left: 50%; 
+    transform: translateX( -50%);
+  }
+  #btnIon{
+    height: 10vh;
+  }
+  #list{
+    position:absolute;
+    top: 55vh;
+    width: 80vw;
+    left: 50%; 
+    transform: translateX( -50%);
+  }
+  .enterBtn{
+  --ripple-color: transparent
+} 
+  @media screen and (min-width: 769px) {
+   /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+   .ad{
+    position:absolute;
+    top: 30vh;
+    left: 50%; 
+    transform: translate(-50%, -70%); 
+  }
+  #union{
+    font-size: 14px;
+  }
+
+  }
+</style>
+<ion-content>
+
+  <div class="background2"></div>
+  <div class="background1"></div>
+  <div class="ad centered"><img src="assets/ad_sample.svg"></div>
+  <ion-text id="union">삼육 대학교<small>[서울]</small></ion-text>
+  <ion-text id="logo"><img src="assets/logo.svg"></ion-text>
+
+  <div id="btn" class="ion-padding"><ion-button routerLink="search" id="btnIon" expand="block" >택시 방 찾기</ion-button></div>
+
+
+
+  
+  <!-- List of Sliding Items -->
+  <ion-list id="list">
+    <ion-list-header>
+      <ion-label>
+        이벤트
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item routerLink="../../tab1" >
+      <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+    </ion-avatar>
+      <ion-label>
+        <h3>Card Link Item 2</h3>
+      <p>dolor sit amet</p>
+      <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+    </ion-label>
+    </ion-item>
+  
+    
+    <ion-list-header>
+      <ion-label>
+        공지사항
+      </ion-label>
+    </ion-list-header>
+  
+  <ion-item routerLink="../../tab1" >
+  <ion-avatar slot="start">
+  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+  </ion-avatar>
+  <ion-label>
+    <h3>Card Link Item 2</h3>
+  <p>dolor sit amet</p>
+  <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+  </ion-label>
+  </ion-item>
+  <ion-item routerLink="../../tab1" >
+    <ion-avatar slot="start">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+    </ion-avatar>
+    <ion-label>
+      <h3>Card Link Item 2</h3>
+    <p>dolor sit amet</p>
+    <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+    </ion-label>
+    </ion-item>  <ion-item routerLink="../../tab1" >
+      <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Card Link Item 2</h3>
+      <p>dolor sit amet</p>
+      <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+      </ion-label>
+      </ion-item>
+  </ion-list>
+
+</ion-content>
