@@ -25,6 +25,26 @@ const routes: Routes = [
   {
     path: 'join-google',
     loadChildren: () => import('./login/join-google/join-google.module').then( m => m.JoinGooglePageModule)
+  },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
+  },
+  {
+    path: 'sign-in',
+    loadChildren: () => import('./sign-in/sign-in.module').then( m => m.SignInPageModule)
+  },
+  {
+    path: 'memo-list',
+    loadChildren: () => import('./memo-list/memo-list.module').then( m => m.MemoListPageModule)
+  },
+  {
+    path: 'memo-detail',
+    loadChildren: () => import('./memo-detail/memo-detail.module').then( m => m.MemoDetailPageModule)
+  },
+  {
+    path: 'memo-create',
+    loadChildren: () => import('./memo-create/memo-create.module').then( m => m.MemoCreatePageModule)
   }
 ];
 @NgModule({
